@@ -5,8 +5,8 @@ import Home from './Home';
 import Protected from './Protected';
 
 const oktaAuth = new OktaAuth({
-  issuer: process.env.OIDC_ISSUER,
-  clientId: process.env.OIDC_CLIENT_ID,
+  issuer: process.env.REACT_APP_OIDC_ISSUER,
+  clientId: process.env.REACT_APP_OIDC_CLIENT_ID,
   redirectUri: window.location.origin + '/login/callback'
 });
 
