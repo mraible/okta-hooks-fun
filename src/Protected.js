@@ -32,7 +32,7 @@ const Protected = () => {
             <tbody>
               {Object.entries(userInfo).map((claimEntry) => {
                 const claimName = claimEntry[0];
-                const claimValue = claimEntry[1];
+                const claimValue = claimEntry[1].toString();
                 const claimId = `claim-${claimName}`;
                 return (
                   <tr key={claimName}>
